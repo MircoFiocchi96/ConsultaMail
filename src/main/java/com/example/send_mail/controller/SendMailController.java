@@ -22,7 +22,7 @@ public class SendMailController {
     public String sendMail(@RequestParam("name") String name, @RequestParam("mail") String mail, @RequestParam("subject") String subject, @RequestParam("body") String body){
 
         String message = body +"\n\n Datos de contacto: " + "\nNombre: " + name + "\nE-mail: " + mail;
-        mailService.sendMail("mail de propiedades","mail de contacto",subject,message);
+        mailService.sendMail("Fabiana.Mercado@cba.gov.ar","Fabiana.Mercado@cba.gov.ar",subject,message);
 
         return "send_mail_view";
     }
