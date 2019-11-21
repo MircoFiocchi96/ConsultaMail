@@ -6,12 +6,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/5b5fa05dbf.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </head>
 <body>
 <div class="container">
-    <div class="card">
-        <div class="jumbotron">
-            <h1 style="text-align: center;">Enviar e-mail</h1>
+    <div class="card mx-auto">
+        <div class="card-header mb-3" >
+            <h1 style="text-align: center;">ENVIAR CONSULTA</h1>
         </div>
         <form method="POST" th:action="@{/sendMail}" id="emailForm" class="container">
             <div class="form-group">

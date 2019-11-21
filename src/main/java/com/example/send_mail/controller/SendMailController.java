@@ -24,6 +24,8 @@ public class SendMailController {
         String message = body +"\n\n Datos de contacto: " + "\nNombre: " + name + "\nE-mail: " + mail;
         mailService.sendMail("Fabiana.Mercado@cba.gov.ar","Fabiana.Mercado@cba.gov.ar",subject,message);
 
+        
         return "send_mail_view";
+        
     }
 }
